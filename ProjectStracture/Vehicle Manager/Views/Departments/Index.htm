@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+    <title style="content:">Fleet Management System</title>
+    <link rel="stylesheet" href="Index_files/all.css">
+    <link rel="stylesheet" href="Index_files/jquery.css">
+    <link rel="stylesheet" href="Index_files/main.css">
+    <link rel="stylesheet" href="Index_files/sidebar-themes.css">
+    <link rel="stylesheet" href="Index_files/bootstrap-select.css">
+    <link rel="stylesheet" href="Index_files/style.css">
+    
+        <link rel="stylesheet" href="Index_files/bootstrap.css">
+    
+    
+</head>
+<body>
+    <div class="page-wrapper default-theme sidebar-bg bg1 toggled">
+        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content mCustomScrollbar _mCS_1 mCS-autoHide desktop mCS_no_scrollbar"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+                <!-- sidebar-brand  -->
+                <div class="sidebar-item sidebar-brand">
+                    <a href="https://localhost:44391/">Fleet Management</a>
+                    <div id="close-sidebar">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <!-- sidebar-header  -->
+                <!-- sidebar-menu  -->
+                <div class=" sidebar-item sidebar-menu">
+                    <ul>
+                        <li class="header-menu">
+                            <span>Administrator</span>
+                        </li>
+                        <li>
+                            <a href="https://localhost:44391/">
+                                <i class="fa fa-home"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://localhost:44391/Home/About">
+                                <i class="fa fa-question-circle"></i>
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://localhost:44391/Home/Contact">
+                                <i class="fa fa-phone"></i>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-car"></i>
+                                <span>Vehicle Procurement Officer</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleProcurementOfficer/ProcurementOfficerVehicles">Upload Received Vehicles</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleProcurementOfficer/ProcurementOfficerVehicles/UploadedVehicles">View Uploaded Vehicles</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleProcurementOfficer/ProcurementOfficerVehicles/HandOverVehicles">Hand Over Vehicles to Vehicle Manager</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleProcurementOfficer/ProcurementOfficerVehicles/VehiclesReferredBack">Vehicles Referred Back</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-car"></i>
+                                <span>Vehicle Manager</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Manage Received Vehicles</span>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleManager/Vehicles/ReceivedVehicles">Received Vehicles </a>
+                                    </li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Manage Vehicles</span>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleManager/Vehicles">Vehicle </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleManager/UploadInvoice">Upload Vehicle Invoice </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleManager/Departments">Departments</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleManager/VehicleColours">Vehicle Colours</a>
+                                    </li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Actions Taken on Vehicle</span>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleManager/AllocateVehicles/Allocate">Allocate Vehicles</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleManager/ReAllocateVehicles">Reallocate Vehicles</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleManager/WithdrawVehicle">Withdraw Vehicle</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-car-side"></i>
+                                <span>Transport</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">P18 Management</span>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/P18">Open P18</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/P18/EditP18">Edit Open P18</a>
+                                    </li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Vehicle Accessories Management</span>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/Accessories">Accessories</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/AccessoryToNewVeh">New Accessory To Vehicle</a>
+                                    </li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Vehicle Inspection</span>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/Inspection">Inspect Vehicles</a>
+                                    </li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Vehicles Ready For Allocation</span>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/PrepForAllocation">Mark Vehicles For Allocation</a>
+                                    </li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">General Hire Vehicle Management</span>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/AllGHVehicles/UnprepGHVehicles">Prepare GH Vehicles</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/AllGHVehicles">All GH Vehicles</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/GHVehicleReservations">Reserved Vehicles</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/GHVehicleCollections">Vehicle Check-Out</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/GHVehicleCollections/CheckedOut">Checked-Out Vehicles</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/GHVehicleReturns">Vehicle Check-In</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/GHVehicleReturns/CheckedIn">Check-In Vehicles</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/GHVehicleRentalHistory">GH Rental History</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-clipboard-check"></i>
+                                <span>Licensing</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+
+                                    <li>
+                                        <a href="https://localhost:44391/Licensing/VehicleLicensing">Vehicle Licensing </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Licensing/RenewVehicleLicensing">Update Vehicle Disk</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-balance-scale"></i>
+                                <span>Legal</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li><a href="https://localhost:44391/Legal/NewCase">New Case</a></li>
+                                    <li><a href="https://localhost:44391/Legal/OpenCase">Open Cases</a></li>
+                                    <li><a href="https://localhost:44391/Legal/Personnels">Legal Personnel</a></li>
+                                    <li><a href="https://localhost:44391/Legal/LossNature">Nature of Loss</a></li>
+                                    <li><a href="https://localhost:44391/Legal/PoliceStations">Police Station</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fas fa-tools"></i>
+                                <span>Workshop</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Turn Down Management</span>
+                                    </li>
+                                    <li><a href="https://localhost:44391/Workshop/VehicleTurnDowns"> Open a Turn Down</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/VehicleTurnDowns/TurnDowns"> Open Turn Downs</a></li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">New Vehicle Job Card Management</span>
+                                    </li>
+                                    <li><a href="https://localhost:44391/Workshop/NewVehJobCard/UnPreInspectedJC">Pre-Inspect New Vehicle</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/NewVehJobCard/UnPostInspectedJC">Post-Inspect New Vehicle</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/NewVehJobCard/OpenJobCards">New Vehicle Open Job Cards</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/NewVehJobCard/ClosedJobCards">New Vehicle Closed Job Cards</a></li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Allocated Vehicle Job Card Management</span>
+                                    </li>
+                                    <li><a href="https://localhost:44391/Workshop/OldVehJobCard/CheckedInVehicles">Open New Job Card</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/OldVehJobCard/VehicleswithJC">Open 2nd Job Card</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/OldVehJobCard/UnPreInspectedJC">Pre-Inspect New Vehicle Job Card</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/OldVehJobCard/UnPostInspectedJC">Post-Inspect New Vehicle Job Card</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/OldVehJobCard/OpenJobCards">Open Job Cards</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/OldVehJobCard/ClosedJobCards">Closed Job Cards</a></li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Job Card Action Management</span>
+                                    </li>
+                                    <li><a href="https://localhost:44391/Workshop/ActionOnJobCard">Pre-Inspect Vehicles awaiting Action</a></li>
+
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Request for Repair Management</span>
+                                    </li>
+                                    <li><a href="https://localhost:44391/Workshop/RequestForRepairs/NewReqForRepairs">Notify Bank</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/RequestForRepairs/NotifiedReqForRepairs">Processed Request for Repairs</a></li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Job Card Clearance Management</span>
+                                    </li>
+                                    <li><a href="https://localhost:44391/Workshop/ClearanceRequest/AwaitingClearances">Upload Unsigned Clarence</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/ClearanceRequest/AwaitingApproval">Upload Signed Clarence</a></li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Conditional Report Management</span>
+                                    </li>
+                                    <li><a href="https://localhost:44391/Workshop/ConditionalReportCategories">Conditional Report Categories</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/ConditionalReportCategoryOptions">Conditional Report Categories Options</a></li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Vehicle Delivery Management</span>
+                                    </li>
+                                    <li><a href="https://localhost:44391/Workshop/VehicleDelivery/AwaitingCheckOut">Awaiting CheckOut</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/VehicleDelivery/AwaitingCheckIn">Awaiting CheckIn</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/VehicleDelivery/DeliveredVehicles">Delivered Vehicles</a></li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Vehicle Collection Management</span>
+                                    </li>
+                                    <li><a href="https://localhost:44391/Workshop/VehicleCollection/AwaitingCheckOut">Awaiting CheckOut</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/VehicleCollection/AwaitingCheckIn">Awaiting CheckIn</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/VehicleCollection/CollectedVehicles">Collected Vehicles</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fas fa-unlock-alt"></i>
+                                <span>Access Control</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li><a href="https://localhost:44391/AccessControl/Vehicles">Check Vehicles In and Out</a></li>
+                                    <li><a href="https://localhost:44391/AccessControl/Vehicles/CheckedInVehicles">Checked In Vehicles</a></li>
+                                    <li><a href="https://localhost:44391/AccessControl/Vehicles/CheckedOutVehicles">Checked Out Vehicles</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- sidebar-menu  -->
+            </div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px; display: block; max-height: 482px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+            <!-- sidebar-footer  -->
+            <div class="sidebar-footer">
+
+            </div>
+        </nav>
+        <!-- sidebar-content  -->
+        <main class="page-content">
+            <div class="container-fluid">
+                
+
+<h2>Index</h2>
+
+<p>
+    <a href="https://localhost:44391/VehicleManager/Departments/Create">Create New</a>
+</p>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    Department Code
+                </th>
+                <th>
+                    Department Name
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>
+                        X01
+                    </td>
+                    <td>
+                        DESTIA
+                    </td>
+                    <td>
+                        <a href="https://localhost:44391/VehicleManager/Departments/Edit/1">Edit</a> |
+                        <a href="https://localhost:44391/VehicleManager/Departments/Details/1">Details</a> |
+                        <a href="https://localhost:44391/VehicleManager/Departments/Delete/1">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        X02
+                    </td>
+                    <td>
+                        Police Roads and Transport
+                    </td>
+                    <td>
+                        <a href="https://localhost:44391/VehicleManager/Departments/Edit/2">Edit</a> |
+                        <a href="https://localhost:44391/VehicleManager/Departments/Details/2">Details</a> |
+                        <a href="https://localhost:44391/VehicleManager/Departments/Delete/2">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        X03
+                    </td>
+                    <td>
+                        Fleet Management GH
+                    </td>
+                    <td>
+                        <a href="https://localhost:44391/VehicleManager/Departments/Edit/3">Edit</a> |
+                        <a href="https://localhost:44391/VehicleManager/Departments/Details/3">Details</a> |
+                        <a href="https://localhost:44391/VehicleManager/Departments/Delete/3">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        X04
+                    </td>
+                    <td>
+                        COGTA
+                    </td>
+                    <td>
+                        <a href="https://localhost:44391/VehicleManager/Departments/Edit/4">Edit</a> |
+                        <a href="https://localhost:44391/VehicleManager/Departments/Details/4">Details</a> |
+                        <a href="https://localhost:44391/VehicleManager/Departments/Delete/4">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        X05
+                    </td>
+                    <td>
+                        Health
+                    </td>
+                    <td>
+                        <a href="https://localhost:44391/VehicleManager/Departments/Edit/5">Edit</a> |
+                        <a href="https://localhost:44391/VehicleManager/Departments/Details/5">Details</a> |
+                        <a href="https://localhost:44391/VehicleManager/Departments/Delete/5">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        X06
+                    </td>
+                    <td>
+                        Education
+                    </td>
+                    <td>
+                        <a href="https://localhost:44391/VehicleManager/Departments/Edit/6">Edit</a> |
+                        <a href="https://localhost:44391/VehicleManager/Departments/Details/6">Details</a> |
+                        <a href="https://localhost:44391/VehicleManager/Departments/Delete/6">Delete</a>
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+</div>
+
+
+            </div>
+
+            <hr>
+            <footer>
+                <p>© 2018 - Sabata Makhele</p>
+            </footer>
+        </main>
+        <!-- page-content" -->
+    </div>
+    <!-- page-wrapper -->
+    <!-- using offline scripts -->
+    
+    
+        <script src="Index_files/jquery.js"></script>
+        <script src="Index_files/bootstrap.js"></script>
+        <script src="Index_files/popper.js"></script>
+        <script src="Index_files/jquery_002.js"></script>
+        <script src="Index_files/main.js"></script>
+        <script src="Index_files/bootstrap-select.js"></script>
+        <script src="Index_files/site.js"></script>
+    
+    
+    
+
+
+
+
+
+
+
+
+</body></html>

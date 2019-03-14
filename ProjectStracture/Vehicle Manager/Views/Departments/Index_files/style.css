@@ -1,0 +1,78 @@
+/*Changing the Background Color for the Bootstrap-Select*/
+div.dropdown > button.btn {
+    display: block;
+    width: 100%;
+    color: #495057;
+    background-color: #fff;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-color: #ced4da;
+    border-right-color: #ced4da;
+    border-left-color: #ced4da;
+    border-bottom-color: #ced4da;
+}
+
+/* Customization the Field-set */
+.myFieldset {
+    border: 2px solid grey !important;
+    min-width: 0;
+    padding: 2px;
+    position: relative;
+    border-radius: 4px;
+    background-color: #fff;
+    padding-left: 20px !important;
+    padding-bottom: 15px !important;
+    text-align:center;
+    margin:5px;
+}
+
+fieldset.myFieldset>legend {
+    font-size: 1rem;
+    width: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: #ffffff;
+}
+
+/*Channing the Padding on the Header*/
+div.card {
+}
+
+h4.card-header{
+    padding:0.2rem;
+}
+
+dl {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+dl.row > dt {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+dl.row > dd {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+table.table thead th {
+    vertical-align: middle;
+    padding:8px;
+}
+table.table tbody td {
+    padding:5px;
+}
+
+.enter {
+    height: 20px;
+}
+
+div.row {
+    margin-right: auto;
+    margin-left: auto;
+}

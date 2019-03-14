@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+    <title style="content:">Fleet Management System</title>
+    <link rel="stylesheet" href="Edit_files/all.css">
+    <link rel="stylesheet" href="Edit_files/jquery.css">
+    <link rel="stylesheet" href="Edit_files/main.css">
+    <link rel="stylesheet" href="Edit_files/sidebar-themes.css">
+    <link rel="stylesheet" href="Edit_files/bootstrap-select.css">
+    <link rel="stylesheet" href="Edit_files/style.css">
+    
+        <link rel="stylesheet" href="Edit_files/bootstrap.css">
+    
+    
+</head>
+<body>
+    <div class="page-wrapper default-theme sidebar-bg bg1 toggled">
+        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content mCustomScrollbar _mCS_1 mCS-autoHide desktop mCS_no_scrollbar"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr">
+                <!-- sidebar-brand  -->
+                <div class="sidebar-item sidebar-brand">
+                    <a href="https://localhost:44391/">Fleet Management</a>
+                    <div id="close-sidebar">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <!-- sidebar-header  -->
+                <!-- sidebar-menu  -->
+                <div class=" sidebar-item sidebar-menu">
+                    <ul>
+                        <li class="header-menu">
+                            <span>Administrator</span>
+                        </li>
+                        <li>
+                            <a href="https://localhost:44391/">
+                                <i class="fa fa-home"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://localhost:44391/Home/About">
+                                <i class="fa fa-question-circle"></i>
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://localhost:44391/Home/Contact">
+                                <i class="fa fa-phone"></i>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-car"></i>
+                                <span>Vehicle Procurement Officer</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleProcurementOfficer/ProcurementOfficerVehicles">Upload Received Vehicles</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleProcurementOfficer/ProcurementOfficerVehicles/UploadedVehicles">View Uploaded Vehicles</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleProcurementOfficer/ProcurementOfficerVehicles/HandOverVehicles">Hand Over Vehicles to Vehicle Manager</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleProcurementOfficer/ProcurementOfficerVehicles/VehiclesReferredBack">Vehicles Referred Back</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-car"></i>
+                                <span>Vehicle Manager</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Manage Received Vehicles</span>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleManager/Vehicles/ReceivedVehicles">Received Vehicles </a>
+                                    </li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Manage Vehicles</span>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleManager/Vehicles">Vehicle </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleManager/UploadInvoice">Upload Vehicle Invoice </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleManager/Departments">Departments</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleManager/VehicleColours">Vehicle Colours</a>
+                                    </li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Actions Taken on Vehicle</span>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleManager/AllocateVehicles/Allocate">Allocate Vehicles</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleManager/ReAllocateVehicles">Reallocate Vehicles</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/VehicleManager/WithdrawVehicle">Withdraw Vehicle</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-car-side"></i>
+                                <span>Transport</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">P18 Management</span>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/P18">Open P18</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/P18/EditP18">Edit Open P18</a>
+                                    </li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Vehicle Accessories Management</span>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/Accessories">Accessories</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/AccessoryToNewVeh">New Accessory To Vehicle</a>
+                                    </li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Vehicle Inspection</span>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/Inspection">Inspect Vehicles</a>
+                                    </li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Vehicles Ready For Allocation</span>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/PrepForAllocation">Mark Vehicles For Allocation</a>
+                                    </li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">General Hire Vehicle Management</span>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/AllGHVehicles/UnprepGHVehicles">Prepare GH Vehicles</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/AllGHVehicles">All GH Vehicles</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/GHVehicleReservations">Reserved Vehicles</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/GHVehicleCollections">Vehicle Check-Out</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/GHVehicleCollections/CheckedOut">Checked-Out Vehicles</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/GHVehicleReturns">Vehicle Check-In</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/GHVehicleReturns/CheckedIn">Check-In Vehicles</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Transport/GHVehicleRentalHistory">GH Rental History</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-clipboard-check"></i>
+                                <span>Licensing</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+
+                                    <li>
+                                        <a href="https://localhost:44391/Licensing/VehicleLicensing">Vehicle Licensing </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://localhost:44391/Licensing/RenewVehicleLicensing">Update Vehicle Disk</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-balance-scale"></i>
+                                <span>Legal</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li><a href="https://localhost:44391/Legal/NewCase">New Case</a></li>
+                                    <li><a href="https://localhost:44391/Legal/OpenCase">Open Cases</a></li>
+                                    <li><a href="https://localhost:44391/Legal/Personnels">Legal Personnel</a></li>
+                                    <li><a href="https://localhost:44391/Legal/LossNature">Nature of Loss</a></li>
+                                    <li><a href="https://localhost:44391/Legal/PoliceStations">Police Station</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fas fa-tools"></i>
+                                <span>Workshop</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Turn Down Management</span>
+                                    </li>
+                                    <li><a href="https://localhost:44391/Workshop/VehicleTurnDowns"> Open a Turn Down</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/VehicleTurnDowns/TurnDowns"> Open Turn Downs</a></li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">New Vehicle Job Card Management</span>
+                                    </li>
+                                    <li><a href="https://localhost:44391/Workshop/NewVehJobCard/UnPreInspectedJC">Pre-Inspect New Vehicle</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/NewVehJobCard/UnPostInspectedJC">Post-Inspect New Vehicle</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/NewVehJobCard/OpenJobCards">New Vehicle Open Job Cards</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/NewVehJobCard/ClosedJobCards">New Vehicle Closed Job Cards</a></li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Allocated Vehicle Job Card Management</span>
+                                    </li>
+                                    <li><a href="https://localhost:44391/Workshop/OldVehJobCard/CheckedInVehicles">Open New Job Card</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/OldVehJobCard/VehicleswithJC">Open 2nd Job Card</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/OldVehJobCard/UnPreInspectedJC">Pre-Inspect New Vehicle Job Card</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/OldVehJobCard/UnPostInspectedJC">Post-Inspect New Vehicle Job Card</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/OldVehJobCard/OpenJobCards">Open Job Cards</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/OldVehJobCard/ClosedJobCards">Closed Job Cards</a></li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Job Card Action Management</span>
+                                    </li>
+                                    <li><a href="https://localhost:44391/Workshop/ActionOnJobCard">Pre-Inspect Vehicles awaiting Action</a></li>
+
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Request for Repair Management</span>
+                                    </li>
+                                    <li><a href="https://localhost:44391/Workshop/RequestForRepairs/NewReqForRepairs">Notify Bank</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/RequestForRepairs/NotifiedReqForRepairs">Processed Request for Repairs</a></li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Job Card Clearance Management</span>
+                                    </li>
+                                    <li><a href="https://localhost:44391/Workshop/ClearanceRequest/AwaitingClearances">Upload Unsigned Clarence</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/ClearanceRequest/AwaitingApproval">Upload Signed Clarence</a></li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Conditional Report Management</span>
+                                    </li>
+                                    <li><a href="https://localhost:44391/Workshop/ConditionalReportCategories">Conditional Report Categories</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/ConditionalReportCategoryOptions">Conditional Report Categories Options</a></li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Vehicle Delivery Management</span>
+                                    </li>
+                                    <li><a href="https://localhost:44391/Workshop/VehicleDelivery/AwaitingCheckOut">Awaiting CheckOut</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/VehicleDelivery/AwaitingCheckIn">Awaiting CheckIn</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/VehicleDelivery/DeliveredVehicles">Delivered Vehicles</a></li>
+                                    <li class="header-menu ">
+                                        <span class="border-bottom border-warning">Vehicle Collection Management</span>
+                                    </li>
+                                    <li><a href="https://localhost:44391/Workshop/VehicleCollection/AwaitingCheckOut">Awaiting CheckOut</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/VehicleCollection/AwaitingCheckIn">Awaiting CheckIn</a></li>
+                                    <li><a href="https://localhost:44391/Workshop/VehicleCollection/CollectedVehicles">Collected Vehicles</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fas fa-unlock-alt"></i>
+                                <span>Access Control</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li><a href="https://localhost:44391/AccessControl/Vehicles">Check Vehicles In and Out</a></li>
+                                    <li><a href="https://localhost:44391/AccessControl/Vehicles/CheckedInVehicles">Checked In Vehicles</a></li>
+                                    <li><a href="https://localhost:44391/AccessControl/Vehicles/CheckedOutVehicles">Checked Out Vehicles</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- sidebar-menu  -->
+            </div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; height: 0px; top: 0px; display: block; max-height: 482px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+            <!-- sidebar-footer  -->
+            <div class="sidebar-footer">
+
+            </div>
+        </nav>
+        <!-- sidebar-content  -->
+        <main class="page-content">
+            <div class="container-fluid">
+                
+
+<h2>Edit</h2>
+
+<h4>Vehicle</h4>
+<hr>
+<div class="row">
+    <div class="col-md-4">
+        <form action="/VehicleManager/Vehicles/Edit/1" method="post" novalidate="novalidate">
+            
+            <input type="hidden" value="1" data-val="true" data-val-required="The VehicleID field is required." id="VehicleID" name="VehicleID">
+            <input type="hidden" value="250000,00" data-val="true" data-val-number="The field Total Purchase Price must be a number." data-val-required="The Total Purchase Price field is required." id="Total_Vehicle_Price" name="Total_Vehicle_Price">
+            <div class="form-group">
+                <label class="control-label" for="Registration_NumberGG">GG Reg Number</label>
+                <input class="form-control" type="text" data-val="true" data-val-required="The GG Reg Number field is required." id="Registration_NumberGG" name="Registration_NumberGG" value="GBJ601FS">
+                <span class="text-danger field-validation-valid" data-valmsg-for="Registration_NumberGG" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="Registration_Number">Reg Number</label>
+                <input class="form-control" type="text" id="Registration_Number" name="Registration_Number">
+                <span class="text-danger field-validation-valid" data-valmsg-for="Registration_Number" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="Make">Make</label>
+                <input class="form-control" type="text" data-val="true" data-val-required="The Make field is required." id="Make" name="Make" value="Nissan">
+                <span class="text-danger field-validation-valid" data-valmsg-for="Make" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="Model">Model</label>
+                <input class="form-control" type="text" data-val="true" data-val-required="The Model field is required." id="Model" name="Model" value="NP300">
+                <span class="text-danger field-validation-valid" data-valmsg-for="Model" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="Year_Model">Year Model</label>
+                <input class="form-control" type="date" data-val="true" data-val-required="The Year Model field is required." id="Year_Model" name="Year_Model" value="2019-03-14">
+                <span class="text-danger field-validation-valid" data-valmsg-for="Year_Model" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="Chassis_Number">Chassis Number</label>
+                <input class="form-control" type="text" data-val="true" data-val-required="The Chassis Number field is required." id="Chassis_Number" name="Chassis_Number" value="12345">
+                <span class="text-danger field-validation-valid" data-valmsg-for="Chassis_Number" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="Engine_Number">Engine Number</label>
+                <input class="form-control" type="text" data-val="true" data-val-required="The Engine Number field is required." id="Engine_Number" name="Engine_Number" value="12345">
+                <span class="text-danger field-validation-valid" data-valmsg-for="Engine_Number" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="VehicleColourID">Vehicle Colour</label>
+                <select class="form-control" data-val="true" data-val-required="The Vehicle Colour field is required." id="VehicleColourID" name="VehicleColourID"><option value="2">Black</option>
+<option value="4">Grey</option>
+<option value="3">Purle White</option>
+<option value="5">Silver</option>
+<option selected="selected" value="1">White</option>
+</select>
+                <span class="text-danger field-validation-valid" data-valmsg-for="VehicleColourID" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="Purchase_Price">Purchase Price</label>
+                <input class="form-control" type="text" data-val="true" data-val-number="The field Purchase Price must be a number." data-val-required="The Purchase Price field is required." id="Purchase_Price" name="Purchase_Price" value="250000,00">
+                <span class="text-danger field-validation-valid" data-valmsg-for="Purchase_Price" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="Vehicle_Photo">Vehicle_Photo</label>
+                <input class="form-control" type="text" id="Vehicle_Photo" name="Vehicle_Photo">
+                <span class="text-danger field-validation-valid" data-valmsg-for="Vehicle_Photo" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="Department">Department</label>
+                <select class="form-control" data-val="true" data-val-required="The DepartmentID field is required." id="DepartmentID" name="DepartmentID"><option selected="selected" value="1">DESTIA</option>
+<option value="2">Police Roads and Transport</option>
+<option value="3">Fleet Management GH</option>
+<option value="4">COGTA</option>
+<option value="5">Health</option>
+<option value="6">Education</option>
+</select>
+                <span class="text-danger field-validation-valid" data-valmsg-for="DepartmentID" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="Purchase_Documents">Purchase_Documents</label>
+                <input class="form-control" type="text" id="Purchase_Documents" name="Purchase_Documents" value="Purchase Documents for GGB00523">
+                <span class="text-danger field-validation-valid" data-valmsg-for="Purchase_Documents" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default">
+            </div>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8ICmGbumCWpOiGM6L0Z8H-huf9ea0H3-br5CrkZw6DIz9sZjh0O31UbfdgaIorpTP_hitK-u-TtyTid05EdWyf609oKCNl7t-VIaSbs5oqKkvEBl_LzhzSyvlD1IJ9rtIC9ZS_SkxdRHOz4bt5BT3ug"></form>
+    </div>
+</div>
+
+<div>
+    <a href="https://localhost:44391/VehicleManager/Vehicles">Back to List</a>
+</div>
+
+
+            </div>
+
+            <hr>
+            <footer>
+                <p>© 2018 - Sabata Makhele</p>
+            </footer>
+        </main>
+        <!-- page-content" -->
+    </div>
+    <!-- page-wrapper -->
+    <!-- using offline scripts -->
+    
+    
+        <script src="Edit_files/jquery.js"></script>
+        <script src="Edit_files/bootstrap.js"></script>
+        <script src="Edit_files/popper.js"></script>
+        <script src="Edit_files/jquery_003.js"></script>
+        <script src="Edit_files/main.js"></script>
+        <script src="Edit_files/bootstrap-select.js"></script>
+        <script src="Edit_files/site.js"></script>
+    
+    
+    
+
+    <script src="Edit_files/jquery_002.js"></script>
+    <script src="Edit_files/jquery_004.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
